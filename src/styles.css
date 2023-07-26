@@ -1,1 +1,128 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --blue-1:#3c429E;
+    --blue-2:#4C52ad;
+    --yellow-1:#FAC742;
+    --white:#fff;
+    --grey-1:#ededed;
+    --shasowadark:rgba(0,0,0,0.3);
+    --shadowlight:rgba(225,225,225,0.1);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+}
+body{
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    width: 350px;
+    height: 80vh;
+    background-color: var(--blue-2);
+    box-shadow: 10px 10px 10px var(--shasowadark);
+
+}
+.upperdata{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.lowerdata{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+     
+
+}
+.upperdata img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.weather-data{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--shasowadark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.location{
+    color: var(--white);
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.temp{
+    color: var(--white);
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.more-info-label{
+    color: var(--white);
+    
+}
+.more-info-container{
+    flex: 1;
+    background-color: var(--shadowlight);
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    margin-top: 1rem;
+    
+
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.info-block{
+    width: 50%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+.info-block-label{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block-label span{
+    font-size: 0.8em;
+    color:  var(--white);
+}
+.info-block-value{
+    width: 50px;
+    justify-content: flex-start;
+    display: flex;
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+
+}
+
